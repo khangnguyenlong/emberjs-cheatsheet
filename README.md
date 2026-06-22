@@ -5,12 +5,12 @@
 | Feature | Purpose | Notes |
 |----------|----------|----------|
 | `@tracked` | Tells Ember to update the UI when this property changes | `@tracked isLoading = true`<br>`this.isLoading = false` |
+| Getter (`get`) | Read a property value. | `get fullName() { return ... }`<br>Use: `this.fullName` |
+| Setter (`set`) | Assign a property. | `set fullName(value) { ... }`<br>Use: `this.fullName = value` |
 | `@computed` | A classic Ember property that updates when its dependencies change. | 🔴 `classic Ember pattern` <br>`@computed("firstName", "lastName")` |
 | `@computed("items.[]")` | Watches array add/remove changes. | 🔴 `classic Ember pattern` |
 | `@computed("items.@each.id")` | Watches a property inside each array item. | 🔴 `classic Ember pattern` |
 | `@computed("object.{prop1,prop2}")` | Watches multiple properties on the same object. | 🔴 `classic Ember pattern` |
-| Getter (`get`) | Read a property value. | `get fullName() { return ... }`<br>Use: `this.fullName` |
-| Setter (`set`) | Assign a property. | `set fullName(value) { ... }`<br>Use: `this.fullName = value` |
 
 ## Actions & Arguments
 
