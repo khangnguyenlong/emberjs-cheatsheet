@@ -4,13 +4,13 @@
 
 | Feature | Purpose | Notes |
 |----------|----------|----------|
-| `@tracked` | | |
-| `@computed` | | |
-| `@computed("items.[]")` | | |
-| `@computed("items.@each.id")` | | |
-| `@computed("object.{prop1,prop2}")` | | |
-| Getter (`get`) | | |
-| Setter (`set`) | | |
+| `@tracked` | Tells Ember to update the UI when this property changes | |
+| `@computed` | A classic Ember property that updates when its dependencies change. | |
+| `@computed("items.[]")` | Watches array add/remove changes. | |
+| `@computed("items.@each.id")` | Watches a property inside each array item. | |
+| `@computed("object.{prop1,prop2}")` | Watches multiple properties on the same object. | |
+| Getter (`get`) | Read a property value. | |
+| Setter (`set`) | Assign a property. | |
 
 ## Actions & Arguments
 
